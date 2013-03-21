@@ -2,23 +2,29 @@
 
 	Title: CSS for xuedeisgn
 	Author: Elmo Wu (by xuedesign studio)
-	Build: v1.6
+	Build: v1
 	Date: 2013/03
 
 ***********************************************************************************************
 		1 通用
 		2 首頁
 		    2.1 頂端區塊
-			2.2 Banner 區塊
-			2.3 部落格新訊
-			2.4 完美底部佈局
-			2.5 版權列區塊
-		3 關於我們
-		4 作品展示
-		5 聯絡我們
-		6 線上諮詢
-		7 403、404頁
-		8 設計觀點 
+			2.2 主選單設定
+			2.3 Banner 區塊
+			2.4 最新消息
+			2.5 最新商品
+			2.6 完美底部佈局
+			2.7 版權列區塊
+		3 企業資訊
+		    3.1 關於我們
+			3.2 最新消息
+			3.3 聯絡我們
+		4 商品區
+		    4.1 商品列表
+			4.2 商品內容
+		5 會員專區
+		6 購物流程
+		7 403、404頁 
 ***********************************************************************************************/
 
 /* 1. 通用 
@@ -27,30 +33,196 @@
 body{
 	margin: 0;
 	padding:0;
-	background: url(../images/bg_website.png);
-	font-family:/*"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU",*/Arial, Helvetica, sans-serif;
+	background: url(../images/bg_website.png) repeat-x;
+	font-family:/*"微軟正黑體","Microsoft JhengHei","新細明體","PMingLiU",*/ Arial, Helvetica, sans-serif;
 	font-size:100%;
-	line-height:20px;
-	color:#565555}
-a:link {text-decoration:underline; color:#00adee}
-a:visited {text-decoration:underline; color:#8c8c8c}
-a:hover {text-decoration:none; color:#F50}
+	line-height:22px;
+	color:#5c5c5c}
+a:link {text-decoration:none; color:#30aec7}
+a:visited {text-decoration:none; color:#969f8a}
+a:hover {text-decoration:underline; color:#F50}
 form{margin:0; padding:0}
 image{border:0}
 
 .clean{ clear:both}
 .hidden{ display:none}
 
-.txt_bluelight{ color:#37F5FB}
-.txt_bluee{ color:#40a3be; font-weight:bold; padding-right:10px; letter-spacing:1px}
-.ccenter{ margin:0 auto}
-.txt_strong{ font-size:1em; font-weight: bold;}
-
 /* 2. 首頁  
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#wrap{ display:block; width:954px; margin:0 auto}
+#wrap{ display:block; width:956px; margin:0 auto; padding:19px}
 
 /*2.1 頂端區塊---------------------------*/
-#header{ display:block; width:954px}
+.top_area{ display:block; width:956px}
+.logo, .shop_info, .sub_nav{ 
+    display:block; 
+    float:left; 
+    overflow:hidden}
+.logo{ width:180px; height:56px}
+.shop_info{ 
+    width:570px; 
+	height:42px;
+	padding-top:12px;}
+.shop_info h1{ 
+    font-size:1em; 
+    color:#646b5b;
+	letter-spacing:1px}
+.shop_info p{ 
+   font-size:0.813em;
+   line-height:20px;
+   color:#898888}
+.sub_nav{ width:206px; height:56px; text-align:right}
+.memberbox{font-size:0.813em}
+.memberbox span{ 
+   background:url(../images/icon_cart.png) no-repeat;
+   padding-left:20px}
+.memberbox a{color:#999898}
+.memberbox a:hover{color:#F50}
+.searchbox{
+	width:198px;
+	border:1px solid #bbbfb5;
+	margin-top:5px;
+	padding:1px 5px 0 1px}
+.search_txt, .search_btn{ display:block; float:left}
+.search_txt{
+	width:174px; 
+    border:none; 
+	font-size:0.813em;
+	line-height:20px;
+	color:#999898;
+	padding-left:5px}
+.search_btn{
+	background:url(../images/icon_glass.png) no-repeat;
+	width:18px;
+	height:16px;
+	border:none;
+	cursor:pointer;
+	margin-top:2px}
+	
+/*2.2 主選單設定---------------------------*/	
+nav{
+	display:block;
+	margin:20px 0 0 10px}
+nav ul{}
+nav li{
+	font-family:"微軟正黑體","Microsoft JhengHei"; 
+    font-size:1.125em;
+	margin-right:10px}
+.navigation li {
+	position: relative;
+	float: left}
+/* 選單 li 裡面連結之樣式 */
+.navigation li a{
+	display: block;
+	padding: 6px 10px;
+	color: #7a7979}
+.navigation li:hover a{
+	display: block;
+	padding: 6px 10px;
+	background:#969f89;
+	color: #FFF;
+	text-decoration:none}	
+/* 特定在第一層 > 第二層或以後下拉部分之樣式 */
+.navigation ul{
+	display: none;
+	float: left;
+	position: absolute;			
+	left: 0;	
+	margin: 0}
+/* 當第一層選單被觸發時，指定第二層顯示 */
+.navigation li:hover > ul{display: block}			
+/* 特定在第二層或以後下拉部分 li 之樣式 */
+.navigation ul li {}
+/* 特定在第二層或以後下拉部分 li （最後一項不要底線）之樣式 */
+.navigation ul li:last-child {}
+/* 第二層或以後選單 li 之樣式 */
+.navigation ul a {
+	width: 120px;
+	padding: 5px 6px;
+	font-size:0.813em;	
+	color: #666;		
+	background: #4A533F;
+	border-bottom:1px dashed #CCCCCC}
+.navigation ul a:hover { background: #4A533F;}
+/* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展） */
+.navigation ul li:hover > ul{
+	display: block;
+	position: absolute;
+	top: 0;				
+	left: 100%}
+.navigation ul li:hover > ul li{ font-size:1em}	
+.navigation ul li:hover > ul a{ border-left:1px solid #CCCCCC}
+/* 箭頭向下 */
+.arrow-bottom {
+	display: inline-block;
+	margin-left: 5px;
+	border-top: 4px solid #FFF;
+	border-right: 4px solid transparent;				
+	border-left: 4px solid transparent;		
+	width: 1px;
+	height: 1px}
+/* 箭頭向右 */
+.arrow-right {
+	display: inline-block;
+	margin-left: 12px;	
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-left: 3px solid #666;		
+	width: 1px;
+	height: 1px}
+	
+	
+/*2.3 Banner 區塊---------------------------*/
+#index_content{
+   display:block;
+   width:956px}
+#banner{ 
+   display:block; 
+   position:relative; 
+   width:955px; 
+   height:433px;
+   margin-top:11px}
+#banner h3{ display:none}
+#banner_main{ 
+    display:block; 
+	position:absolute; 
+	width:955px; 
+	height:433px; 
+	background:#FFF; 
+	top:0; 
+	left:0; 
+	z-index:99; 
+	overflow:hidden;}
+#banner_btn{
+	display:block;
+	position:absolute;
+	width:120px;
+	height:18px;
+	top:250px;
+	left:240px;
+	z-index:200;
+	text-indent:-9999px}
+#banner_btn a{
+	display:block;
+	float:left;
+	width:14px;
+	height:14px;
+	background: url(../images/btn_banner.png) 0 -14px no-repeat;
+	margin:0 8px }
+#banner_btn a.activeSlide, #banner_btn a:hover{ background: url(../images/btn_banner.png) no-repeat}		
+
+/*2.6 完美底部佈局---------------------------*/
+html, body, #wrap {height: 100%;}
+body > #wrap {height: auto; min-height: 100%;}
+#main_content{padding-bottom:40px}
+.clearfix:after {content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
 				

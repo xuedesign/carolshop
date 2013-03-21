@@ -10,16 +10,112 @@
 <title>CAROL 購物網</title>
 <link href="css/reset.css" rel="stylesheet">
 <link href="css/green.css" rel="stylesheet"/>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="/script/jquery-1.9.1.min.js"><\/script>')</script>
+<!--<script src="http://ie.microsoft.com/testdrive/HTML5/CompatInspector/inspector.js"></script><!-- 網頁除錯，製作完畢請移除 -->
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="/script/jquery.min.js"><\/script>')</script>
 <!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<!--[if lte IE 6]>
-<script type="text/javascript" src="script/letskillie6.zh_tw.js"></script>
+<!--[if IE 6]>
+	<script src="//letskillie6.googlecode.com/svn/trunk/2/zh_TW.js"></script>
 <![endif]-->
 </head>
 
 <body>
+   <div id="wrap">
+   	  
+      <header class="top_area">
+         <div class="logo">
+            <img src="images/logo.jpg" width="180" height="56" alt="logo"><!-- 商店logo圖，固定大小180px*56px --> 
+         </div>
+         <div class="shop_info">
+            <h1>CAROL流行時尚</h1>
+            <p>CAROL將持續引領時尚流行，將最夯最hot的流行時尚服飾，以最超值滴價格直接回饋給美眉唷!!</p>
+         </div>
+         <div class="sub_nav">
+            <div class="memberbox">
+               <a href="content/member/login.html" title="會員登入">會員登入</a> │
+               <a href="#" title="前往結帳"><span>購物車(0元)</span></a>
+            </div>
+            <div class="searchbox">
+                <input name="" type="text" class="search_txt"  placeholder="搜尋商品">
+                <input type="submit" class="search_btn" id="search" value="">
+                <br class="clean" />
+            </div>
+         </div>
+         <br class="clean" />
+      </head>
+      
+      <nav>
+      	<ul class="navigation">
+      		<li><a href="index.html" title="商店首頁">商店首頁</a></li>
+      		
+            <li><a href="#" title="商店資訊">商店資訊</a>
+                <ul>
+                   <li><a href="#" title="關於我們">關於我們</a></li>
+                   <li><a href="#" title="最新消息">最新消息</a></li>
+                   <li><a href="#" title="聯絡我們">聯絡我們</a></li>
+                </ul>
+      		</li>
+            <li><a href="#" title="潮流男裝">潮流男裝</a>
+                <ul>
+                   <li><a href="#" title="上衣類">上衣類上衣類</a>
+                       <ul>
+                         <li><a href="#" title="秋冬商品出清">秋冬商品出清</a></li>
+                         <li><a href="#" title="T恤_台灣設計">T恤_台灣設計</a></li>
+                         <li><a href="#" title="T恤_美系授權">T恤_美系授權</a></li>
+                         <li><a href="#" title="春夏針織衫">春夏針織衫</a></li>
+                         <li><a href="#" title="短袖上衣">短袖上衣</a></li>
+                       </ul> 
+                   </li>
+                   <li><a href="#" title="下身類">下身類</a>
+                       <ul>
+                         <li><a href="#" title="牛仔褲">牛仔褲</a></li>
+                         <li><a href="#" title="短褲">短褲</a></li>
+                         <li><a href="#" title="長褲">長褲</a></li>
+                         <li><a href="#" title="機能褲">機能褲</a></li>
+                       </ul> 
+                   </li>
+                   <li><a href="#" title="配件類">配件類</a>
+                       <ul>
+                         <li><a href="#" title="皮帶">皮帶</a></li>
+                         <li><a href="#" title="襪子">襪子</a></li>
+                         <li><a href="#" title="拖鞋">拖鞋</a></li>
+                       </ul> 
+                   </li>
+                </ul>
+            </li>
+      		
+            <li><a href="#" title="時尚女裝">時尚女裝</a></li>
+      		<li><a href="#" title="精緻配件">精緻配件</a></li>
+      		<li><a href="#" title="魅力睡衣">魅力睡衣</a></li>
+      		<li><a href="#" title="可愛童裝">可愛童裝</a></li>
+      	</ul>
+      </nav>
+   	  
+      <!--<div id="index_content">
+         <section id="banner">
+            <h3>【開始設計工作室的五大特色】</h3>
+                <div id="banner_btn"></div>
+                <div id="banner_main">
+                     <img src="images/banner_01.jpg" width="955" height="433" alt="示意圖片" />
+                     <img src="images/banner_02.jpg" width="955" height="433" alt="示意圖片" />
+                     <img src="images/banner_03.jpg" width="955" height="433" alt="示意圖片" />
+                     <img src="images/banner_04.jpg" width="955" height="433" alt="示意圖片" />
+                     <img src="images/banner_05.jpg" width="955" height="433" alt="示意圖片" />
+                 </div>
+         </section>
+      </div>-->
+   
+   </div><!-- end #wrap //-->
+   
+   <footer>
+   
+   </footer>
+   
+   <script src="script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
+   <script src="script/jquery.cycle.js"></script><!--banner 輪播用-->
+   <script src="script/mosaic.1.0.1.min.js"></script><!--banner 輪播用-->
+   <script src="script/siteset.js"></script>
 </body>
 </html>
