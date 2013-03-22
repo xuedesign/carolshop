@@ -20,11 +20,22 @@ $(function(){
 //首頁banner滑動
 $(function(){
 		$('#banner_main').cycle({ 
-				fx:'scrollLeft',
-				pager:'#banner_btn'
+			fx:'scrollLeft',
+			pager:'#banner_btn'
 		});
 	})
-	
+
+//首頁文字輪播	
+$(document).ready(
+	function(){
+		$('#news').innerfade({
+		   animationtype: 'slide',
+		   speed: 750,
+		   timeout: 2500,
+		   type: 'random',
+		   containerheight: '1em'
+     });
+});
 
 //圖片延遲載入
 $(function() {
