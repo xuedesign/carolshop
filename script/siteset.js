@@ -41,4 +41,14 @@ $(document).ready(
 $(function() {
           $("img").lazyload({placeholder : "../images/grey.gif",effect: "fadeIn"});
       });
-	  
+
+//
+$("#accordion > li > h3").click(function(){
+
+	if(false == $(this).next().is(':visible')) {
+		$('#accordion ul').slideUp(300);
+	}
+	$(this).next().slideToggle(300);
+});
+
+$('#accordion ul:eq(0)').show();	  
