@@ -426,4 +426,20 @@ footer a:hover {text-decoration:underline; color:#F50}
 	color: #ccc; 
 	margin-right: 2px}
 
-/*4.2 商品內容---------------------------*/				
+/*4.2 商品內容---------------------------*/
+.backicon{
+	background:url(../images/icon_back.png) 0 3px no-repeat;
+	padding-left:18px}
+.product_intro{
+	display:block;
+	margin:27px 0 30px 0}
+.picbox{
+	display:block;
+	float:left;
+	width:328px;
+	padding:0 31px 0 10px}
+.picbox img{ border:1px solid #e2e1e1}	
+.txtbox{
+	display:block;
+	float:right;
+	width:339px}						
