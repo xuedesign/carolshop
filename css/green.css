@@ -442,4 +442,93 @@ footer a:hover {text-decoration:underline; color:#F50}
 .txtbox{
 	display:block;
 	float:right;
-	width:339px}						
+	width:339px}
+.txtbox li{
+	font-size:0.813em;
+	padding:12px 0;
+	border-bottom:1px dashed #dbdbdb}	
+.price_01{ color:#fd4848; letter-spacing:1px}
+.price_02{ font-size:3em; color:#dd2828; padding-left:10px; vertical-align:baseline}
+.size-title{float:left; padding-top:5px}
+.choosebox{margin:0; padding:0}
+.choosebox li{
+	display: block;
+	float:left;
+    font-size:1em;
+	padding:0;
+	margin:0 10px 0 0;
+	border-bottom:none}
+.choosebox li a{
+	display:block;
+	float:left;
+	background:#fff;
+	font-size:1em;
+	border:1px solid #ccc;
+	padding:2px 10px 2px}
+.choosebox li a:hover{
+	background:#969f89;
+	border:1px solid #ccc;
+	color:#FFF;
+	text-decoration:none}
+.choosebox li a.current{
+	background:#969f89;
+	border:1px solid #ccc;
+	color:#FFF;
+	text-decoration:none}	
+.choosebox li input{display:none}
+.txt_amount{
+	width:64px;
+	padding:5px 10px;
+	font-size:1em;
+	border:1px solid #dbdbdb}
+a.addcrat{
+	display:block;
+	width:120px;
+	margin:15px 0 0 38px;
+	background:#FDE1DE;
+	padding:3px 15px;
+	font-size:0.813em;
+	font-weight: bold;
+	letter-spacing:2px;
+	color:#f55f5f;
+	text-align:center}
+a.addcrat:hover{
+	background:#969f89;
+	color:#FFF;
+	text-decoration:none}
+.btn_fb, .btn_gplus, .btn_twitter{
+	display:block;
+	float:left;
+	margin: 50px 0 0 5px;}		
+
+.product_note{display:block; width:708px; margin-top:10px}
+.product_note h4{ 
+    display:block; 
+	width:695px;
+	margin:10px 0;
+	padding:5px 0 5px 13px;
+	font-size:0.938em;
+	font-weight:normal;
+	line-height:25px;
+	letter-spacing:1px;
+	color:#898888;
+	background:#f3f3f3}
+.note_main{
+	display:block;
+	width:686px;
+	padding:5px 0 10px 22px}	
+.note_main p{
+	font-size:0.813em; 
+	line-height:22px}
+.note_main img{ margin:10px 0}
+a.btn_down{
+	float: right;
+	padding:3px 5px 3px 23px;
+	font-size:0.813em;
+	line-height:22px;
+	color:#5c5c5c;
+	background:url(../images/icon_back.png) 5px 8px no-repeat #ccdbb6}
+a.btn_down:hover{
+	text-decoration:none;
+	color:#FFF;
+	background:url(../images/icon_back.png) 5px 8px no-repeat #969f89}							

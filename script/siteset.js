@@ -11,11 +11,13 @@ function externalLinks() {
 } 
 window.onload = externalLinks;
 
+
 //主選單效果
 $(function(){
 	$("ul.navigation > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
 	$("ul.navigation > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
 });
+
 
 //首頁banner滑動
 $(function(){
@@ -24,6 +26,7 @@ $(function(){
 			pager:'#banner_btn'
 		});
 	})
+
 
 //首頁文字輪播	
 $(document).ready(
@@ -36,6 +39,7 @@ $(document).ready(
 		   containerheight: '1em'
      });
 });
+
 
 //圖片延遲載入
 $(function() {
@@ -51,4 +55,4 @@ $("#accordion > li > h3").click(function(){
 	$(this).next().slideToggle(300);
 });
 
-$('#accordion ul:eq(0)').show();	  
+$('#accordion ul:eq(0)').show();

@@ -163,18 +163,43 @@
               </div>   
               
             <div class="product_intro">
-                 <div class="picbox"><img src="../../images/pic_model_04.jpg" width="326" height="326" alt="*"></div>
+                 <div class="picbox"><img src="../../images/pic_model_04.jpg" width="326" height="326" alt="*"></div><!-- 圖片鎖寬326px -->
                  <div class="txtbox">
                    <ul>
-                      <li>NTS$300</li>
+                      <li><span class="price_01">NTS$</span><span class="price_02">300</span></li>
                       <li>商品編號：A1265689865</li>
-                      <li></li>
-                      <li></li>
+                      <li><span class="size-title">尺寸：</span>
+                          <div class="choosebox">
+			                <ul class="clearfix">
+				               <li>
+					             <input type="radio" name="name" value="S" id="" />
+					             <a href="javascript:void(0);" class="size_radioToggle"><span class="value">S</span></a>
+				               </li>
+				               <li>
+					             <input type="radio" name="name" value="M" id="" />
+					             <a href="javascript:void(0);" class="size_radioToggle"><span class="value">M</span></a>
+				               </li>
+				               <li>
+					             <input type="radio" name="name" value="L" id="" />
+					             <a href="javascript:void(0);" class="size_radioToggle"><span class="value">L</span></a>
+				               </li>
+				               <li>
+					             <input type="radio" name="name" value="XL" id="" />
+					             <a href="javascript:void(0);" class="size_radioToggle"><span class="value">XL</span></a>
+				               </li>
+				               <li>
+					             <input type="radio" name="name" value="XXL" id="" />
+					             <a href="javascript:void(0);" class="size_radioToggle"><span class="value">XXL</span></a>
+				               </li>
+			                </ul>
+		                </div>
+                      </li>
+                      <li>數量：<input name="" type="text" class="txt_amount"  placeholder="請輸入數量"></li>
                     </ul>
-                    <a href="#" title="加入購物車">加入購物車</a>
+                    <a href="#" class="addcrat" title="加入購物車">加入購物車</a>
                     <div class="btn_fb">
                           <iframe src="http://www.facebook.com/widgets/like.php?href=http://asia-learning.com&amp;layout=button_count"
-                                  scrolling="no" frameborder="0" style="border:none; width:100px; height:24px" allowTransparency="true">
+                                  scrolling="no" frameborder="0" style="border:none; width:80px; height:22px; padding-top:3px" allowTransparency="true">
                           </iframe>
                     </div>
                     <div class="btn_gplus">
@@ -187,26 +212,27 @@
                               })();
                           </script>
                       </div>
-                      <div class="btn_twitter">
+                      <!--<div class="btn_twitter">
                          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                      </div>
+                      </div>-->
                    </div><!-- end txtbox//-->
                    <br class="clean" />
                    
-                   <section>
+                   <section class="product_note">
                       <h4>● 產品說明及注意事項 //</h4>
-                     <div>
-                       <p>1.深淺色請分開洗滌。</p>
+                      <div class="note_main">
+                         <p>1.深淺色請分開洗滌。</p>
                          <p>2.清洗時，水溫請低於30℃並使用中性洗劑，不可漂白，不可浸泡。</p>
                          <p>3.請包覆細網洗衣袋以低速脫水且平放晾乾，以保持商品型態。</p>
                          <p>4.如需熨燙，溫度不可超過120℃。</p>
                          <p>5.產地：中國</p>
-                       <p>6.材質：棉96%、尼龍4%</p>
-                         <img src="../../images/pic_05.jpg" width="685" height="320" alt="*">
+                         <p>6.材質：棉96%、尼龍4%</p>
+                         <img src="../../images/pic_05.jpg" width="686" height="320" alt="*"><!-- 圖片鎖寬686px -->
                          <img src="../../images/pic_06.jpg" width="686" height="239" alt="*">  
                       </div>
-                      <a href="list.html" title="返回列表" class="backicon">返回列表</a> 
+                      <a href="list.html" title="返回列表" class="btn_down">返回列表</a>
+                      <br class="clean" /> 
                    </section>
                      
               </div>  
@@ -228,6 +254,18 @@
    </footer>
    
    <!-- InstanceBeginEditable name="script-box" -->
+   <script>
+       $(function(){   
+	      $('.choosebox li a').click(function(){
+		     var thisToggle = $(this).is('.size_radioToggle') ? $(this) : $(this).prev();
+		     var checkBox = thisToggle.prev();
+		     checkBox.trigger('click');
+		   $('.size_radioToggle').removeClass('current');
+		     thisToggle.addClass('current');
+		      return false;
+	       });		
+       });
+   </script>
    <script src="../../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
    <script src="../../script/siteset.js"></script>
    <!-- InstanceEndEditable -->
