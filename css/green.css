@@ -145,7 +145,7 @@ nav li{
 	color: #666;		
 	background: #4A533F;
 	border-bottom:1px dashed #CCCCCC}
-.navigation ul a:hover { background: #4A533F;}
+.navigation ul a:hover { background: #4A533F}
 /* 第三層之後，上一層的選單觸發則顯示出來（皆為橫向拓展） */
 .navigation ul li:hover > ul{
 	display: block;
@@ -209,9 +209,12 @@ nav li{
 	height:14px;
 	color:#4A533F;
 	border:1px solid #4A533F;
-	background:#969f89;
+	background:#A7B298;
 	padding:0 0 5px 4px;
-	margin:0 8px }
+	margin:0 8px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 #banner_btn a.activeSlide, #banner_btn a:hover{ background:#4A533F; color:#FFF; text-decoration:none}
 
 /*2.4 最新消息---------------------------*/
@@ -260,7 +263,10 @@ nav li{
 	border:1px solid #e2e1e1;
 	padding:10px 14px;
 	font-size:0.813em;
-	line-height:22px}
+	line-height:22px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
 .sale_list li{margin: 10px 0 20px 22px}	
 .product_list li{margin: 20px 9px;}	
 .sale_list li h4, .product_list li h4{ font-weight:normal}	
@@ -337,7 +343,10 @@ footer a:hover {text-decoration:underline; color:#F50}
 	letter-spacing:1px;
 	cursor: pointer;
 	padding: 5px 5px 5px 15px;
-	margin:10px 0}
+	margin:10px 0;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 #accordion ul {
 	display: none;
 	list-style: none;
@@ -402,29 +411,44 @@ footer a:hover {text-decoration:underline; color:#F50}
 	padding:2px 5px; 
 	color: #aaa; 
 	margin-right: 2px; 
-	text-decoration: none}
+	text-decoration: none;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 .quotes a:hover {
 	border:1px solid #4A533F;
 	background:#4A533F;
 	color:#FFF; 
 	padding:2px 5px; 
-	margin-right: 2px}
+	margin-right: 2px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 .quotes a:active {
 	border: #a0a0a0 1px solid; 
 	padding:2px 5px; 
-	margin-right: 2px}
+	margin-right: 2px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 .quotes span.current {
 	border: #e0e0e0 1px solid; 
 	padding:2px 5px; 
 	font-weight: bold; 
 	color: #fff; 
 	margin-right: 2px; 
-	background-color:#969f89}
+	background-color:#969f89;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 .quotes span.disabled {
 	border: #f3f3f3 1px solid; 
 	padding:2px 5px; 
 	color: #ccc; 
-	margin-right: 2px}
+	margin-right: 2px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 
 /*4.2 商品內容---------------------------*/
 .backicon{
@@ -476,11 +500,12 @@ footer a:hover {text-decoration:underline; color:#F50}
 	color:#FFF;
 	text-decoration:none}	
 .choosebox li input{display:none}
-.txt_amount{
-	width:64px;
+.txt_amount, .txt_color{
 	padding:5px 10px;
 	font-size:1em;
 	border:1px solid #dbdbdb}
+.txt_amount{width:64px}
+.txt_color{width:110px}	
 a.addcrat{
 	display:block;
 	width:120px;
@@ -491,7 +516,10 @@ a.addcrat{
 	font-weight: bold;
 	letter-spacing:2px;
 	color:#f55f5f;
-	text-align:center}
+	text-align:center;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 a.addcrat:hover{
 	background:#969f89;
 	color:#FFF;
@@ -523,12 +551,107 @@ a.addcrat:hover{
 .note_main img{ margin:10px 0}
 a.btn_down{
 	float: right;
-	padding:3px 5px 3px 23px;
+	padding:3px 20px 3px 40px;
 	font-size:0.813em;
 	line-height:22px;
 	color:#5c5c5c;
-	background:url(../images/icon_back.png) 5px 8px no-repeat #ccdbb6}
+	background:url(../images/icon_back.png) 20px 8px no-repeat #ccdbb6;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
 a.btn_down:hover{
 	text-decoration:none;
 	color:#FFF;
-	background:url(../images/icon_back.png) 5px 8px no-repeat #969f89}							
+	background:url(../images/icon_back.png) 20px 8px no-repeat #969f89}
+
+
+/* 6. 購物流程
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#cart_box{display:block; width:956px}
+#cart_step{display:block; width:555px; margin:0 auto}
+#cart_step p, #cart_step span{display:block; float:left}
+#cart_step p{
+	width:153px;
+	height:27px;
+	background:#dfe2db;
+	font-size:0.813em;
+	color:#898888;
+	text-align:center;
+	padding-top:6px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;}
+#cart_step .inset{ background:#fedcdc}	
+#cart_step span{
+	width:14px;
+	height:14px;
+	background:url(../images/icon_arrow.gif) no-repeat;
+	margin:10px 17px 0 17px;}
+#cart_list{ clear:both; display:block}
+#cart_btn{display:block; width:916px; padding:0 20px}
+.cartbtn_left{float:left}
+.cartbtn_right{float:right}	
+.cartbtn_left a, .cartbtn_right a{
+	display:block;
+	width:110px;
+	height:24px;
+	padding-top:4px;
+	font-size:0.813em;
+	text-align:center;
+	background:#ccdbb6;
+	letter-spacing:2px;
+	color:#5c5c5c;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px}
+.cartbtn_left a:hover, .cartbtn_right a:hover{ background:#969F89; text-decoration:none; color:#FFF}
+
+.shoping_list{
+	display:block;
+	width:914px;
+	padding:30px 20px;
+	margin:25px 0;
+ 	border:1px solid #cacfc4;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px}
+.list_main th{
+	font-size:0.813em;
+	font-weight:bold;
+	color:#686868;
+	border-bottom:1px solid #DADADA}
+.list_main tr{
+	border-bottom:1px dashed #DADADA}
+.list_main td{
+	padding:10px 8px;
+	font-size:0.813em;
+	text-align:center}
+.list_main td img{ vertical-align:middle}
+.list_main .pp_name{ text-align:left; padding-left:20px}	
+.number_box{
+	width:40px;
+	padding:3px;
+	border:1px solid #cacfc4;
+	font-size:1em;}	
+.btn_del{
+	display:block;
+	width:16px;
+	height:16px;
+	background:url(../images/icon_trashbox.gif) no-repeat;
+	border:none;
+	margin:0 auto;
+	cursor:pointer;
+	text-indent:-9999px}
+.sum_number{
+	display:block;
+	width:190px;
+	float:right;
+	margin-top:10px}
+.sum_number ul{}
+.sum_number li{
+	font-size:0.813em;
+	line-height:30px}
+.sum_number span{ color:#C14948; float:right; padding-right:15px}		
+.sum_number .tline{ border-bottom:1px dashed #DADADA}	
+							
