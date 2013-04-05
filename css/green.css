@@ -569,7 +569,8 @@ a.btn_down:hover{
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
 #cart_box{display:block; width:956px}
-#cart_step{display:block; width:555px; margin:0 auto}
+#cart_box h2{ display:none}
+#cart_step, .cart_note{display:block; width:555px; margin:0 auto}
 #cart_step p, #cart_step span{display:block; float:left}
 #cart_step p{
 	width:153px;
@@ -590,6 +591,7 @@ a.btn_down:hover{
 	margin:10px 17px 0 17px;}
 #cart_list{ clear:both; display:block}
 #cart_btn{display:block; width:916px; padding:0 20px}
+#cart_btn_01{display:block; width:230px; padding:0 20px; margin:0 auto}
 .cartbtn_left{float:left}
 .cartbtn_right{float:right}	
 .cartbtn_left a, .cartbtn_right a{
@@ -653,5 +655,33 @@ a.btn_down:hover{
 	font-size:0.813em;
 	line-height:30px}
 .sum_number span{ color:#C14948; float:right; padding-right:15px}		
-.sum_number .tline{ border-bottom:1px dashed #DADADA}	
-							
+.sum_number .tline{ border-bottom:1px dashed #DADADA}
+
+.cart_note{ padding:30px 0 5px}
+.cart_note h4{ font-size:1em; padding-bottom:15px; font-weight:normal}
+.cart_note h4 span{ font-weight:bold; padding:0 15px}
+.cart_note p{ font-size:0.813em; line-height:30px}
+
+.formember_note{display:block; width:890px; margin:0 auto}
+.formember_note h3{
+	display:block;
+	background:url(../images/bg_cratnote_title.png) no-repeat;
+	width:830px;
+	height:33px;
+	font-size:1.125em;
+	padding:6px 0 0 60px;
+	letter-spacing:2px}
+.note_left{
+	display:block;
+	float:left;
+	width:380px;
+	padding:0 0 0 65px}
+.note_right{
+	display:block;
+	float:right;
+	width:445px}	
+.note_left ul{ padding-top:11px}	
+.note_left li{ font-size:0.813em; padding:5px 0}
+.note_left span{ font-weight:bold; padding-left:10px}
+.note_right h5{ font-size:0.813em; color:#fc7979; padding-top:10px}
+.note_right p{ font-size:0.813em; line-height:24px; padding:5px 0}							
