@@ -47,6 +47,7 @@ image{border:0}
 
 .clean{ clear:both}
 .hidden{ display:none}
+.txt_red{ color:#BF4947}
 
 /* 2. 首頁  
 -----------------------------------------------------------------------------------------------
@@ -590,7 +591,7 @@ a.btn_down:hover{
 	background:url(../images/icon_arrow.gif) no-repeat;
 	margin:10px 17px 0 17px;}
 #cart_list{ clear:both; display:block}
-#cart_btn{display:block; width:916px; padding:0 20px}
+#cart_btn{display:block; width:916px; padding:0 20px; margin-bottom:30px}
 #cart_btn_01{display:block; width:230px; padding:0 20px; margin:0 auto}
 .cartbtn_left{float:left}
 .cartbtn_right{float:right}	
@@ -684,4 +685,22 @@ a.btn_down:hover{
 .note_left li{ font-size:0.813em; padding:5px 0}
 .note_left span{ font-weight:bold; padding-left:10px}
 .note_right h5{ font-size:0.813em; color:#fc7979; padding-top:10px}
-.note_right p{ font-size:0.813em; line-height:24px; padding:5px 0}							
+.note_right p{ font-size:0.813em; line-height:24px; padding:5px 0}
+
+.foembox{display:block; padding:11px 0 0 65px}
+.foembox li{
+	font-size:0.813em;
+	line-height:25px;
+	padding-bottom:15px}
+.txt_area_01, .txt_area_02, .txt_area_03{
+	border:1px solid #cccccc;
+	margin-left:10px;
+	padding:3px 10px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px}
+.txt_area_01{width:200px} 	
+.txt_area_02{ width:60px;}
+.txt_area_03{ width:300px}	
+.formember_note h3 span{ font-size:0.625em; font-weight:normal; margin-left:5px }
+.formember_note h3 span input{ vertical-align:middle}							
