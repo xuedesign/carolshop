@@ -565,6 +565,57 @@ a.btn_down:hover{
 	color:#FFF;
 	background:url(../images/icon_back.png) 20px 8px no-repeat #969f89}
 
+/* 5. 會員登入
+-----------------------------------------------------------------------------------------------
+===============================================================================================*/
+#member_box{
+	display:block;
+	position:relative;
+	width:486px;
+	margin:30px auto 0 auto;
+	padding:20px 35px;
+	border:2px solid #c9d1ba;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	font-size:0.813em}
+#member_box h2{
+	display:block;
+	position:absolute;
+	width:106px;
+	height:26px;
+	text-indent:-9999px;
+	top:-15px;
+	left:20px}
+.title_01{ background:url(../images/title_set.png) no-repeat}
+.title_02{ background:url(../images/title_set.png) 0 -26px no-repeat}
+.title_03{ background:url(../images/title_set.png) 0 -52px no-repeat}
+.icon_set{ display: inline-block; width:16px; height:16px; margin-right:15px; vertical-align:middle}
+.icon_01{ background:url(../images/icon_set.png) no-repeat}
+.icon_02{ background:url(../images/icon_set.png) 0 -16px no-repeat}	
+.icon_03{ background:url(../images/icon_set.png) 0 -32px no-repeat}	
+.icon_04{ background:url(../images/icon_set.png) 0 -48px no-repeat}
+.icon_05{ background:url(../images/icon_set.png) 0 -64px no-repeat}
+#member_box ul{ margin-top:20px}
+#member_box li{ margin-bottom:20px}
+#member_box a{
+	display:block;
+	width:110px;
+	height:24px;
+	margin:0 auto 20px;
+	padding-top:4px;
+	font-size:1em;
+	text-align:center;
+	background:#ccdbb6;
+	letter-spacing:2px;
+	color:#5c5c5c;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px}
+#member_box a:hover{ background:#969F89; text-decoration:none; color:#FFF}
+.down_link ul{ margin-left:550px}
+.down_link li{ float:left; margin:10px 15px 0 0}			
+.down_link a{ font-size:0.813em}
 
 /* 6. 購物流程
 -----------------------------------------------------------------------------------------------
