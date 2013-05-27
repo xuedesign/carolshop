@@ -47,7 +47,7 @@ image{border:0}
 
 .clean{ clear:both}
 .hidden{ display:none}
-.txt_red{ color:#BF4947}
+.txt_red{color:#BF4947}
 
 /* 2. 首頁  
 -----------------------------------------------------------------------------------------------
@@ -55,8 +55,8 @@ image{border:0}
 #wrap{ display:block; width:956px; margin:0 auto; padding:19px 19px 0 19px}
 
 /*2.1 頂端區塊---------------------------*/
-.top_area{ display:block; width:956px}
-.logo, .shop_info, .sub_nav{ 
+.top_area{ display:block; position:relative; width:956px}
+.logo, .shop_info{ 
     display:block; 
     float:left; 
     overflow:hidden}
@@ -73,14 +73,23 @@ image{border:0}
    font-size:0.813em;
    line-height:20px;
    color:#898888}
-.sub_nav{ width:206px; height:56px; text-align:right}
-.memberbox{font-size:0.813em}
+.sub_nav{
+	display:block;
+	position:absolute; 
+    width:300px; 
+	height:56px;
+	top:0;
+	right:0; 
+	text-align:right;
+	overflow:hidden}
+.memberbox{ font-size:0.813em}
 .memberbox span{ 
    background:url(../images/icon_cart.png) no-repeat;
    padding-left:20px}
 .memberbox a{color:#999898}
 .memberbox a:hover{color:#F50}
 .searchbox{
+	float:right;
 	width:198px;
 	border:1px solid #bbbfb5;
 	margin-top:5px;
@@ -568,18 +577,17 @@ a.btn_down:hover{
 /* 5. 會員登入
 -----------------------------------------------------------------------------------------------
 ===============================================================================================*/
-#member_box{
+#member_box, #center_main{
 	display:block;
-	position:relative;
-	width:486px;
-	margin:30px auto 0 auto;
+	position:relative; 
 	padding:20px 35px;
 	border:2px solid #c9d1ba;
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	font-size:0.813em}
-#member_box h2{
+#member_box{ width:486px; margin:30px auto 0 auto}	
+#member_box h2, #center_main h2{
 	display:block;
 	position:absolute;
 	width:106px;
@@ -590,15 +598,20 @@ a.btn_down:hover{
 .title_01{ background:url(../images/title_set.png) no-repeat}
 .title_02{ background:url(../images/title_set.png) 0 -26px no-repeat}
 .title_03{ background:url(../images/title_set.png) 0 -52px no-repeat}
+.title_04{ background:url(../images/title_set.png) 0 -78px no-repeat}
+.title_05{ background:url(../images/title_set.png) 0 -104px no-repeat}
+.title_06{ background:url(../images/title_set.png) 0 -130px no-repeat}
+
 .icon_set{ display: inline-block; width:16px; height:16px; margin-right:15px; vertical-align:middle}
 .icon_01{ background:url(../images/icon_set.png) no-repeat}
 .icon_02{ background:url(../images/icon_set.png) 0 -16px no-repeat}	
 .icon_03{ background:url(../images/icon_set.png) 0 -32px no-repeat}	
 .icon_04{ background:url(../images/icon_set.png) 0 -48px no-repeat}
 .icon_05{ background:url(../images/icon_set.png) 0 -64px no-repeat}
-#member_box ul{ margin-top:20px}
-#member_box li{ margin-bottom:20px}
-#member_box a{
+.icon_06{ background:url(../images/icon_set.png) 0 -80px no-repeat}
+#member_box ul, #center_main ul{ margin-top:20px}
+#member_box li, #center_main li{ margin-bottom:20px}
+#member_box a, .down_link02 a{
 	display:block;
 	width:110px;
 	height:24px;
@@ -612,10 +625,32 @@ a.btn_down:hover{
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px}
-#member_box a:hover{ background:#969F89; text-decoration:none; color:#FFF}
+.down_link02 a{ float:left; margin-right:15px}	
+#member_box a:hover, .down_link02 a:hover{ background:#969F89; text-decoration:none; color:#FFF}
 .down_link ul{ margin-left:550px}
 .down_link li{ float:left; margin:10px 15px 0 0}			
 .down_link a{ font-size:0.813em}
+
+#member_center{ display:block; width:900px; margin:0 auto}
+#member_nav{ display:block; float:left; width:150px}
+#member_nav ul{ margin:0 15px;}
+#member_nav li{ padding:10px 0; border-bottom:1px dashed #BBBFB5 }
+#center_main{ display:block; position:relative; float:right; width:670px}
+.down_link02{ padding-left:120px}
+.bg_pp{ display:block; position:absolute; width:167px; height:164px}
+.pp_01{ top:135px; right:25px; background:url(../images/bg_pp01.png) no-repeat}
+.pp_02{ top:40px; right:25px; background:url(../images/bg_pp02.png) no-repeat}
+
+.mytable{}
+.mytable th{ 
+    background:#CCDBB6; 
+	border-top:1px solid #A5AE93; 
+	border-bottom:1px solid #A5AE93;
+	border-right:1px solid #fff;  
+	padding:5px;
+	text-shadow:0 0 1px #FFFFFF}
+.mytable tr{}
+.mytable td{ text-align:center; padding:8px 5px; border-bottom:1px dashed #B0BAA0}
 
 /* 6. 購物流程
 -----------------------------------------------------------------------------------------------
@@ -743,7 +778,7 @@ a.btn_down:hover{
 	font-size:0.813em;
 	line-height:25px;
 	padding-bottom:15px}
-.txt_area_01, .txt_area_02, .txt_area_03{
+.txt_area_01, .txt_area_02, .txt_area_03, .txt_area_04, .txt_area_05, .txt_area_06, .txt_area_07{
 	border:1px solid #cccccc;
 	margin-left:10px;
 	padding:3px 10px;
@@ -752,6 +787,10 @@ a.btn_down:hover{
 	-webkit-border-radius:3px}
 .txt_area_01{width:200px} 	
 .txt_area_02{ width:60px;}
-.txt_area_03{ width:300px}	
+.txt_area_03{ width:300px}
+.txt_area_04{ width:40px}	
+.txt_area_05{ width:285px}
+.txt_area_06{ width:360px}
+.txt_area_07{ width:260px}			
 .formember_note h3 span{ font-size:0.625em; font-weight:normal; margin-left:5px }
 .formember_note h3 span input{ vertical-align:middle}							
