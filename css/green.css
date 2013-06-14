@@ -641,6 +641,7 @@ a.btn_down:hover{
 .pp_01{ top:135px; right:25px; background:url(../images/bg_pp01.png) no-repeat}
 .pp_02{ top:40px; right:25px; background:url(../images/bg_pp02.png) no-repeat}
 
+
 .mytable{}
 .mytable th{ 
     background:#CCDBB6; 
@@ -648,9 +649,23 @@ a.btn_down:hover{
 	border-bottom:1px solid #A5AE93;
 	border-right:1px solid #fff;  
 	padding:5px;
-	text-shadow:0 0 1px #FFFFFF}
-.mytable tr{}
+	text-shadow:0 1px 1px #FFFFFF}
+.mytable tr:hover{ background:#FFC}
 .mytable td{ text-align:center; padding:8px 5px; border-bottom:1px dashed #B0BAA0}
+.unpay{ color:#F30}
+.btn_edit, .btn_cancel{ display: inline-block; width:20px; height:20px; text-indent:-9999px; margin:0 5px}
+.btn_edit{ background: url(../images/btn_option.png) no-repeat}
+.btn_edit:hover{ background: url(../images/btn_option.png) -20px 0 no-repeat}
+.btn_cancel{ background: url(../images/btn_option.png) 0 -20px no-repeat}
+.btn_cancel:hover{ background: url(../images/btn_option.png) -20px -20px no-repeat}
+
+/*頁碼*/
+.sabrosus{padding: 3px; margin:15px 3px 3px; font-size:1em; text-align: center}
+.sabrosus a{border: #AFBB9C 1px solid; padding:2px 5px; color:#AFBB9C; margin-right: 5px; text-decoration: none}
+.sabrosus a:hover{border: #AFBB9C 1px solid; color:#fff; background:#AFBB9C}
+.pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
+.sabrosus span.current{border: #AFBB9C 1px solid; padding:2px 5px; font-weight: bold; color:#fff; margin-right: 5px; background:#AFBB9C}
+.sabrosus span.disabled{border: #AFBB9C 1px solid; padding:2px 5px; color:#929292; margin-right: 5px}
 
 /* 6. 購物流程
 -----------------------------------------------------------------------------------------------
