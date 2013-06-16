@@ -740,13 +740,14 @@ a.btn_down:hover{
 	font-size:1em;}	
 .btn_del{
 	display:block;
-	width:16px;
-	height:16px;
-	background:url(../images/icon_trashbox.gif) no-repeat;
+	width:20px;
+	height:20px;
+	background: url(../images/btn_option.png) 0 -20px no-repeat;
 	border:none;
 	margin:0 auto;
 	cursor:pointer;
 	text-indent:-9999px}
+.btn_del:hover{ background:url(../images/btn_option.png) -20px -20px no-repeat}	
 .sum_number{
 	display:block;
 	width:190px;
