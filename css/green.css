@@ -609,6 +609,8 @@ a.btn_down:hover{
 .icon_04{ background:url(../images/icon_set.png) 0 -48px no-repeat}
 .icon_05{ background:url(../images/icon_set.png) 0 -64px no-repeat}
 .icon_06{ background:url(../images/icon_set.png) 0 -80px no-repeat}
+.icon_07{ background:url(../images/icon_set.png) 0 -96px no-repeat}
+.icon_08{ background:url(../images/icon_set.png) 0 -112px no-repeat}
 #member_box ul, #center_main ul{ margin-top:20px}
 #member_box li, #center_main li{ margin-bottom:20px}
 #member_box a, .down_link02 a{
@@ -625,15 +627,42 @@ a.btn_down:hover{
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px}
-.down_link02 a{ float:left; margin-right:15px}	
+.down_link02 a{ float:left; margin-right:15px}
 #member_box a:hover, .down_link02 a:hover{ background:#969F89; text-decoration:none; color:#FFF}
+
+#member_box .btn_refresh, #member_box .btn_refresh:hover{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	text-indent:-9999px;
+	background:url(../images/icon_refresh.png) no-repeat;
+	margin:0 0 0 10px;
+	padding:0;}	
 .down_link ul{ margin-left:550px}
 .down_link li{ float:left; margin:10px 15px 0 0}			
 .down_link a{ font-size:0.813em}
 
+.pic_captcha{ margin-left:10px; vertical-align:middle}
+#member_box .mml{ margin-left:22px}
+#member_box .mml-02{ margin:5px 5px 0 18px}
+#member_box .service{
+	display:inline-block;
+	width:55px;
+	background:none;
+	padding-top:4px;
+	line-height:18px;
+	text-decoration:underline; 
+	color:#30aec7;
+	letter-spacing:normal;
+	margin-bottom:-15px}
+#member_box .service:hover{
+	background:none;
+	text-decoration:underline; 
+	color:#F50}	
+
 #member_center{ display:block; width:900px; margin:0 auto}
 #member_nav{ display:block; float:left; width:150px}
-#member_nav ul{ margin:0 15px;}
+#member_nav ul{ margin:0 15px}
 #member_nav li{ padding:10px 0; border-bottom:1px dashed #BBBFB5 }
 #center_main{ display:block; position:relative; float:right; width:670px}
 .down_link02{ padding-left:120px}
@@ -666,6 +695,29 @@ a.btn_down:hover{
 .pagination a:active{border: #2b66a5 1px solid;  color: #000; background-color: lightyellow}
 .sabrosus span.current{border: #AFBB9C 1px solid; padding:2px 5px; font-weight: bold; color:#fff; margin-right: 5px; background:#AFBB9C}
 .sabrosus span.disabled{border: #AFBB9C 1px solid; padding:2px 5px; color:#929292; margin-right: 5px}
+
+/*light box*/
+.box_light{ 
+  display:none;
+  width:540px;
+  padding:15px 30px;}
+.box_light h3{ padding-bottom:5px}
+.box_light p{
+	display:block;
+	padding-left:20px;
+	font-size:0.813em;
+	line-height:22px;
+	padding-bottom:8px;}
+.box_light ol{
+	padding-left:20px;
+	font-size:0.813em;
+	line-height:22px;
+	padding-bottom:8px;}
+.box_light li{
+	font-size:1em;
+	line-height:22px;
+	padding:5px 0;
+	list-style: disc}
 
 /* 6. 購物流程
 -----------------------------------------------------------------------------------------------
@@ -794,7 +846,7 @@ a.btn_down:hover{
 	font-size:0.813em;
 	line-height:25px;
 	padding-bottom:15px}
-.txt_area_01, .txt_area_02, .txt_area_03, .txt_area_04, .txt_area_05, .txt_area_06, .txt_area_07{
+.txt_area_01, .txt_area_02, .txt_area_03, .txt_area_04, .txt_area_05, .txt_area_06, .txt_area_07, .txt_area_08{
 	border:1px solid #cccccc;
 	margin-left:10px;
 	padding:3px 10px;
@@ -807,6 +859,7 @@ a.btn_down:hover{
 .txt_area_04{ width:40px}	
 .txt_area_05{ width:285px}
 .txt_area_06{ width:360px}
-.txt_area_07{ width:260px}			
+.txt_area_07{ width:260px}
+.txt_area_08{ width:100px}			
 .formember_note h3 span{ font-size:0.625em; font-weight:normal; margin-left:5px }
-.formember_note h3 span input{ vertical-align:middle}							
+.formember_note h3 span input{ vertical-align:middle}						

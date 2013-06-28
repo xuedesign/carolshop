@@ -110,7 +110,7 @@
            <ul>
               <li>
                <span class="icon_set icon_03"></span>姓　　名：
-               <input name="mail" type="mail" class="txt_area_01" value="">
+               <input name="name" type="text" class="txt_area_01" value="">
                <input name="sex" type="radio" value="male">先生
                <input name="sex" type="radio" value="female">小姐
              </li>
@@ -119,9 +119,24 @@
                <input name="mail" type="mail" class="txt_area_03" value="">
              </li>
              <li>
+               <span class="icon_set icon_02"></span>驗證碼：
+               <input name="captcha" type="text" class="txt_area_08 mml" value="">
+               <img src="../../images/captcha_image.jpg" width="115" height="30" alt="*" class="pic_captcha"> 
+               <a href="#" title="更新驗證碼" class="btn_refresh">更新驗證碼</a>
+             </li>
+             <li>
+               <span class="icon_set icon_08"></span>服務條款：
+               <input name="service" type="checkbox" value="" class="mml-02">我同意並接受<a href="#service_info" title="服務條款" class="service fancybox">服務條款</a>
+             </li>
+             <li>
+               <span class="icon_set icon_07"></span>訂閱電子報：
+               <input name="subscription" type="radio" value="yes">願意
+               <input name="subscription" type="radio" value="no">不願意
+             </li>
+             <!--<li>
                <span class="icon_set icon_02"></span>密　　碼：
                <input name="password" type="password" class="txt_area_03" value="">
-             </li>
+             </li>-->
              <a href="member.html" title="送出">送出</a>
              <p>若您要成為CAROL購物網會員，請填寫會員基本資料完成送出後，即可成為CAROL會員。</p>
            </ul>
@@ -131,6 +146,35 @@
           	<li><span class="icon_set icon_05"></span><a href="login.html" title="會員登入">會員登入</a></li>
             <li><span class="icon_set icon_04"></span><a href="forgot.html" title="忘記密碼">忘記密碼</a></li>
           </ul>
+        </div>
+        
+        <div id="service_info" class="box_light">
+          <h3>1. 認知與接受條款</h3> 
+
+          <p>Alex Inc.係依據本服務條款提供Alex Inc.（http://www.alex.com/）服務 (以下簡稱「本服務」)。當您使用本服務時，即表示您已閱讀、瞭解並同意接受本服務條款之所有內容。此外，當您使用Alex Inc.的特定服務時，可能會依據該特定服務之性質，而須遵守Alex Inc.所另行公告之服務條款或相關規定。</p>
+          <p>此另行公告之服務條款或相關規定（包括但不限於反垃圾郵件政策）亦均併入屬於本服務條款之一部分。Alex Inc.有權於任何時間修改或變更本服務條款之內容，建議您隨時注意該等修改或變更。您於任何修改或變更後繼續使用本服務，視為您已閱讀、瞭解並同意接受該等修改或變更。如果您不同意本服務條款的內容，或者您所屬的國家或地域排除本服務條款內容之全部或一部時，您應立即停止使用本服務。</p>
+
+          <p>若您為未滿二十歲，除應符合上述規定外，並應於您的家長（或監護人）閱讀、瞭解並同意本服務條款之所有內容及其後修改變更後，方得使用或繼續使用本服務。當您使用或繼續使用本服務時，即推定您的家長（或監護人）已閱讀、瞭解並同意接受本服務條款之所有內容及其後修改變更。</p> 
+
+         <h3>2. 與第三人網站的連結</h3> 
+             <p>本服務或協力廠商可能會提供連結至其他網站或網路資源的連結。您可能會因此連結至其他業者經營的網站，但不表示Alex Inc.與該等業者有任何關係。其他業者經營的網站均由各該業者自行負責，不屬Alex Inc.控制及負責範圍之內。Alex Inc.對任何檢索結果或外部連結，不擔保其合適性、可依賴性、即時性、有效性、正確性及完整性。您也許會檢索或連結到一些令您厭惡或不需要的網站，這是網際網路運作的可能結果，遇到此類情形時，Alex Inc.建議您不要瀏覽或儘速離開該等網站。您並同意Alex Inc.無須為您連結至非屬於Alex Inc.之網站所生之任何損害，負損害賠償之責任。</p>
+
+         <h3>3. 您的註冊義務</h3>
+             <ol>為了能使用本服務，您同意以下事項：
+
+                 <li>依本服務註冊表之提示提供您本人正確、最新及完整的資料</li>
+                 <li>維持並更新您個人資料，確保其為正確、最新及完整。若您提供任何錯誤、不實或不完整的資料，Alex Inc.有權暫停或終止您的帳號，並拒絕您使用本服務之全部或一部。</li>
+             </ol>   
+          <h3>4. Alex Inc.隱私權政策</h3>
+
+             <p>關於您的會員註冊以及其他特定資料依Alex Inc.「隱私權政策」受到保護與規範。您瞭解當您使用本服務時，您同意Alex Inc.依據「隱私權政策」進行您個人資料的蒐集與利用，包括跨國間的傳輸與儲存及Alex Inc.及其關係企業內部之利用。</p>
+
+          <h3>5. 會員帳號、密碼及安全</h3>
+
+             <ol>完成本服務的登記程序之後，您將收到一個密碼及帳號。請注意，您有責任維持密碼及帳號的機密安全。您並同意以下事項：
+                 <li>您的密碼或帳號遭到盜用或有其他任何安全問題發生時，您將立即通知Alex Inc.</li>
+                 <li>每次連線完畢，均結束您的帳號使用。</li>
+             </ol> 
         </div>
    	  <!-- InstanceEndEditable -->
       </div><!--end page_content//-->  
@@ -145,6 +189,16 @@
    </footer>
    
    <!-- InstanceBeginEditable name="script-box" -->
+   <link href="../../css/jquery.fancybox.css" rel="stylesheet">
+   <script src="../../script/jquery.fancybox.pack.js"></script>
+   <script>
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+            $(".fancybox-effects-a").fancybox({
+				helpers:{
+					title:{type : 'outside'},
+					overlay:{speedOut : 0}  }  });  });
+    </script>
    <script src="../../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
    <script src="../../script/siteset.js"></script>
    <!-- InstanceEndEditable -->
