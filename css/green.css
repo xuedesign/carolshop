@@ -590,17 +590,23 @@ a.btn_down:hover{
 #member_box h2, #center_main h2{
 	display:block;
 	position:absolute;
-	width:106px;
 	height:26px;
 	text-indent:-9999px;
 	top:-15px;
 	left:20px}
+.title_01, .title_02, .title_03, .title_04, .title_05, .title_06, .title_07{width:106px}
+.title_08{ width:146px}
+.title_09, .title_10{ width:124px}	
 .title_01{ background:url(../images/title_set.png) no-repeat}
 .title_02{ background:url(../images/title_set.png) 0 -26px no-repeat}
 .title_03{ background:url(../images/title_set.png) 0 -52px no-repeat}
 .title_04{ background:url(../images/title_set.png) 0 -78px no-repeat}
 .title_05{ background:url(../images/title_set.png) 0 -104px no-repeat}
 .title_06{ background:url(../images/title_set.png) 0 -130px no-repeat}
+.title_07{ background:url(../images/title_set.png) 0 -156px no-repeat}
+.title_08{ background:url(../images/title_set.png) 0 -182px no-repeat}
+.title_09{ background:url(../images/title_set.png) 0 -208px no-repeat}
+.title_10{ background:url(../images/title_set.png) 0 -234px no-repeat}
 
 .icon_set{ display: inline-block; width:16px; height:16px; margin-right:15px; vertical-align:middle}
 .icon_01{ background:url(../images/icon_set.png) no-repeat}
@@ -611,9 +617,11 @@ a.btn_down:hover{
 .icon_06{ background:url(../images/icon_set.png) 0 -80px no-repeat}
 .icon_07{ background:url(../images/icon_set.png) 0 -96px no-repeat}
 .icon_08{ background:url(../images/icon_set.png) 0 -112px no-repeat}
+.icon_09{ background:url(../images/icon_set.png) 0 -128px no-repeat}
+.icon_10{ background:url(../images/icon_set.png) 0 -144px no-repeat}
 #member_box ul, #center_main ul{ margin-top:20px}
 #member_box li, #center_main li{ margin-bottom:20px}
-#member_box a, .down_link02 a{
+#member_box a, .down_link02 a, #pay_info .btn_send{
 	display:block;
 	width:110px;
 	height:24px;
@@ -628,7 +636,7 @@ a.btn_down:hover{
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px}
 .down_link02 a{ float:left; margin-right:15px}
-#member_box a:hover, .down_link02 a:hover{ background:#969F89; text-decoration:none; color:#FFF}
+#member_box a:hover, .down_link02 a:hover, #pay_info .btn_send:hover{ background:#969F89; text-decoration:none; color:#FFF}
 
 #member_box .btn_refresh, #member_box .btn_refresh:hover{
 	display:inline-block;
@@ -645,6 +653,7 @@ a.btn_down:hover{
 .pic_captcha{ margin-left:10px; vertical-align:middle}
 #member_box .mml{ margin-left:22px}
 #member_box .mml-02{ margin:5px 5px 0 18px}
+#member_box .mml-03{ margin-left:15px}
 #member_box .service{
 	display:inline-block;
 	width:55px;
@@ -670,7 +679,6 @@ a.btn_down:hover{
 .pp_01{ top:135px; right:25px; background:url(../images/bg_pp01.png) no-repeat}
 .pp_02{ top:40px; right:25px; background:url(../images/bg_pp02.png) no-repeat}
 
-
 .mytable{}
 .mytable th{ 
     background:#CCDBB6; 
@@ -682,11 +690,13 @@ a.btn_down:hover{
 .mytable tr:hover{ background:#FFC}
 .mytable td{ text-align:center; padding:8px 5px; border-bottom:1px dashed #B0BAA0}
 .unpay{ color:#F30}
-.btn_edit, .btn_cancel{ display: inline-block; width:20px; height:20px; text-indent:-9999px; margin:0 5px}
+.btn_edit, .btn_cancel, .btn_pay{ display: inline-block; width:20px; height:20px; text-indent:-9999px; margin:0 3px}
 .btn_edit{ background: url(../images/btn_option.png) no-repeat}
 .btn_edit:hover{ background: url(../images/btn_option.png) -20px 0 no-repeat}
 .btn_cancel{ background: url(../images/btn_option.png) 0 -20px no-repeat}
 .btn_cancel:hover{ background: url(../images/btn_option.png) -20px -20px no-repeat}
+.btn_pay{ background: url(../images/btn_option.png) 0 -60px no-repeat}
+.btn_pay:hover{background: url(../images/btn_option.png) -20px -60px no-repeat}
 
 /*頁碼*/
 .sabrosus{padding: 3px; margin:15px 3px 3px; font-size:1em; text-align: center}
@@ -718,6 +728,35 @@ a.btn_down:hover{
 	line-height:22px;
 	padding:5px 0;
 	list-style: disc}
+
+.success_pic, .success_info{ display:block; float:left}
+.success_info{ margin:30px 0 0 15px}
+.success_info p{ line-height:30px}
+
+.dates{ display:block; padding:5px 0 15px 0}
+.dates .btn_search{
+	display: inline-block;
+	width:50px;
+	height:22px;
+	margin-left:10px;
+	font-size:1em;
+	text-align:center;
+	background:#ccdbb6;
+	letter-spacing:2px;
+	color:#5c5c5c;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px}
+.btn_search:hover{background:#969F89; text-decoration:none; color:#FFF}
+#order{ display:none}
+#pay_info{
+	display:none;
+	padding:25px;
+	border:1px solid #A0AD8C}
+#pay_info li{ padding-bottom:15px; font-size:0.813em}
+#pay_info li span{ display:inline-block; width:100px; text-align:right}
+#pay_info .btn_send{font-size:0.813em}		
+	
 
 /* 6. 購物流程
 -----------------------------------------------------------------------------------------------
@@ -763,15 +802,17 @@ a.btn_down:hover{
 	-webkit-border-radius:3px}
 .cartbtn_left a:hover, .cartbtn_right a:hover{ background:#969F89; text-decoration:none; color:#FFF}
 
-.shoping_list{
-	display:block;
-	width:914px;
+.shoping_list, .shoping_list_02{
+	display:block; 
 	padding:30px 20px;
 	margin:25px 0;
+	background: #FFF;
  	border:1px solid #cacfc4;
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px}
+.shoping_list{width:914px;}
+.shoping_list_02{width:800px}	
 .list_main th{
 	font-size:0.813em;
 	font-weight:bold;
@@ -862,4 +903,6 @@ a.btn_down:hover{
 .txt_area_07{ width:260px}
 .txt_area_08{ width:100px}			
 .formember_note h3 span{ font-size:0.625em; font-weight:normal; margin-left:5px }
-.formember_note h3 span input{ vertical-align:middle}						
+.formember_note h3 span input{ vertical-align:middle}				
+
+#datepicker-01, #datepicker-02{ display:inline-block; margin:0 5px}		

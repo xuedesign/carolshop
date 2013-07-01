@@ -43,7 +43,7 @@
             </div>
             <div class="searchbox">
                 <input name="" type="text" class="search_txt"  placeholder="搜尋商品">
-                <input type="submit" class="search_btn" id="search" value="">
+                <input type="submit" class="search_btn" id="search" value="" onclick="location.href='../shop/search.html'">
                 <br class="clean" />
             </div>
          </div>
@@ -115,6 +115,13 @@
         </div>
    	    <div id="center_main">
            <h2 class="title_05">訂單查詢</h2>
+           <div class="dates">
+              日期查詢：
+              <input id="datepicker-01" name="startdate" type="text" class="txt_area_08" placeholder="請選擇">起至
+              <input id="datepicker-02" name="enddate" type="text" class="txt_area_08" placeholder="請選擇">止
+              <a href="#" title="查詢" class="btn_search">查詢</a>
+           </div>
+           
            <table width="100%" class="mytable">
             <tr>
                 <th>編號</th>
@@ -128,11 +135,12 @@
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td><span class="unpay">待付款</span></td>
                 <td>訂單成立</td>
                 <td>
+                   <a href="#pay_info" title="匯款回覆" class="btn_pay fancybox">匯款回覆</a> 
                    <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
                    <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
                 </td>
@@ -140,11 +148,12 @@
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td><span class="unpay">待付款</span></td>
                 <td>訂單成立</td>
                 <td>
+                   <a href="#pay_info" title="匯款回覆" class="btn_pay fancybox">匯款回覆</a> 
                    <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
                    <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
                 </td>
@@ -152,11 +161,12 @@
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td><span class="unpay">待付款</span></td>
                 <td>訂單成立</td>
                 <td>
+                   <a href="#pay_info" title="匯款回覆" class="btn_pay fancybox">匯款回覆</a> 
                    <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
                    <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
                 </td>
@@ -164,11 +174,12 @@
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td><span class="unpay">待付款</span></td>
                 <td>訂單成立</td>
                 <td>
+                   <a href="#pay_info" title="匯款回覆" class="btn_pay fancybox">匯款回覆</a> 
                    <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
                    <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
                 </td>
@@ -176,74 +187,56 @@
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td>已付款</td>
                 <td>確認付款中</td>
-                <td>
-                   <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
-                   <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
-                </td>
+                <td>-</td>
             </tr>
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td>已付款</td>
                 <td>已出貨</td>
-                <td>
-                   <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
-                   <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
-                </td>
+                <td>-</td>
             </tr>
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td>已付款</td>
                 <td>已出貨</td>
-                <td>
-                   <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
-                   <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
-                </td>
+                <td>-</td>
             </tr>
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td>已付款</td>
                 <td>已送達</td>
-                <td>
-                   <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
-                   <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
-                </td>
+                <td>-</td>
             </tr>
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td>已付款</td>
                 <td>已送達</td>
-                <td>
-                   <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
-                   <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
-                </td>
+                <td>-</td>
             </tr>
             <tr>
                 <td>c21584</td>
                 <td>2013/05/31</td>
-                <td><a href="#" title="觀看明細">觀看</a></td>
+                <td><a href="#order" title="觀看購物明細" class="fancybox">購物明細</a></td>
                 <td>39990</td>
                 <td>已付款</td>
                 <td>已送達</td>
-                <td>
-                   <a href="../cart/cart_list.html" title="修改訂單" class="btn_edit">修改訂單</a>
-                   <a href="#" title="取消訂單" class="btn_cancel">取消訂單</a>
-                </td>
+                <td>-</td>
             </tr>
          </table>
          <div class="sabrosus"><!-- span class="current"為目前頁面數 -->
@@ -258,9 +251,58 @@
               <a href="#?page=2"> > </a>
           </div>
 
-            
         </div>
         <br class="clean" />
+      </div>
+      <br />
+      
+      <div id="order">
+         <div class="shoping_list_02">
+                  <table width="100%" class="list_main" summary="購物清單">
+                     <tr>
+                       <th>商品名稱</th>
+                       <th>顏色</th>
+                       <th>尺寸</th>
+                       <th>數量</th>
+                       <th>單價</th>
+                       <th>小計</th>
+                     </tr>
+                     <tr>
+                       <td class="pp_name"><img src="../../images/pic_clother_01.jpg" width="80" height="80" alt="*"> 抗UV超輕薄外套</td>
+                       <td>桃紅</td>
+                       <td>L</td>
+                       <td>1</td>
+                       <td>790</td>
+                       <td>790</td>
+                     </tr>
+                     <tr>
+                       <td class="pp_name"><img src="../../images/pic_clother_02.jpg" width="80" height="80" alt="*"> 快乾連帽外套</td>
+                       <td>鐵灰</td>
+                       <td>L</td>
+                       <td>1</td>
+                       <td>490</td>
+                       <td>490</td>
+                     </tr>
+                  </table>
+                  <div class="sum_number">
+                     <ul>
+                        <li>價錢小計<span>NT$ 1280</span></li>
+                        <li class="tline">運費小計<span>NT$ 100</span></li>
+                        <li>總　　計<span>NT$ 1380</span></li>
+                     </ul>
+                  </div>
+                  <br class="clean" />
+               </div>
+          </div>
+      
+      <div id="pay_info">
+         <ul>
+         	<li><span>匯款日期：</span> <input id="datepicker-03" name="date" type="text" class="txt_area_07" placeholder="請選擇"></li>
+         	<li><span>匯款金額：</span> <input name="money" type="text" class="txt_area_07" value="" placeholder="請輸入金額"></li>
+         	<li><span>匯款銀行：</span> <input name="bank" type="text" class="txt_area_07" value="" placeholder="請輸入銀行名稱"></li>
+         	<li><span>帳戶末五碼：</span> <input name="bank-id" type="text" class="txt_area_07" value="" placeholder="請輸入帳號末五碼"></li>
+         </ul>
+         <a href="#" title="確認送出" class="btn_send">確認送出</a>
       </div>  
         
    	  <!-- InstanceEndEditable -->
@@ -271,11 +313,31 @@
    <footer>
        <section class="copyrightbar">
           <p class="bar_left">©2013 Alex Inc. ALL RIGHT RESERVED.Design by <a href="http://www.xuedesign.tw" title="設計協力：開始設計工作室" rel="external">xuedesign studio</a></p>
-          <p class="bar_right"><a href="#" title="網站使用條款" rel="external">網站使用條款</a>│<a href="#" title="隱私權政策" rel="external">隱私權政策</a>│<a href="#" title="免責聲明" rel="external">免責聲明</a>│<a href="#" title="問題回饋" rel="external">問題回饋</a></p>
+          <p class="bar_right"><a href="../../terms_of_use.html" title="網站使用條款" rel="external">網站使用條款</a>│<a href="../../privacy.html" title="隱私權政策" rel="external">隱私權政策</a>│<a href="../../disclaimer.html" title="免責聲明" rel="external">免責聲明</a>│<a href="../../feedback.html" title="問題回饋" rel="external">問題回饋</a></p>
        </section>
    </footer>
    
    <!-- InstanceBeginEditable name="script-box" -->
+   <link href="http://code.jquery.com/ui/jquery-ui-git.css" rel="stylesheet"/>
+   <script src="http://code.jquery.com/ui/jquery-ui-git.js"></script>
+   <script>
+   $(function() {
+    $( "#datepicker-01" ).datepicker();
+	$( "#datepicker-02" ).datepicker();
+	$( "#datepicker-03" ).datepicker();
+   });
+   </script>
+
+   <link href="../../css/jquery.fancybox.css" rel="stylesheet">
+   <script src="../../script/jquery.fancybox.pack.js"></script>
+   <script>
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+            $(".fancybox-effects-a").fancybox({
+				helpers:{
+					title:{type : 'outside'},
+					overlay:{speedOut : 0}  }  });  });
+    </script>
    <script src="../../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
    <script src="../../script/siteset.js"></script>
    <!-- InstanceEndEditable -->
