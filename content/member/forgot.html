@@ -123,18 +123,40 @@
           </ul>
         </div>
    	  <!-- InstanceEndEditable -->
-      </div><!--end page_content//-->  
+      </div><!--end page_content//--> 
+      
+      <div id="feedback">
+         <ul>
+         	<li><span>姓　　名：</span> <input id="datepicker-03" name="date" type="text" class="txt_area_07" placeholder="請輸入姓名"></li>
+         	<li><span>連絡電話：</span> <input name="money" type="text" class="txt_area_07" value="" placeholder="請輸入連絡電話"></li>
+         	<li><span>電子信箱：</span> <input name="bank" type="text" class="txt_area_07" value="" placeholder="請輸入電子信箱"></li>
+         	<li><span>建議事項：</span> <textarea name="bank-id" rows="5" class="txt_area_07" placeholder="請輸入建議或要反映的事項"></textarea>
+         	</li>
+         </ul>
+         <a href="#" title="確認送出" class="btn_send">確認送出</a>
+      </div>
+       
    	 </div>
    </div><!-- end #wrap //-->
    
    <footer>
        <section class="copyrightbar">
           <p class="bar_left">©2013 Alex Inc. ALL RIGHT RESERVED.Design by <a href="http://www.xuedesign.tw" title="設計協力：開始設計工作室" rel="external">xuedesign studio</a></p>
-          <p class="bar_right"><a href="../../terms_of_use.html" title="網站使用條款" rel="external">網站使用條款</a>│<a href="../../privacy.html" title="隱私權政策" rel="external">隱私權政策</a>│<a href="../../disclaimer.html" title="免責聲明" rel="external">免責聲明</a>│<a href="../../feedback.html" title="問題回饋" rel="external">問題回饋</a></p>
+          <p class="bar_right"><a href="../../terms_of_use.html" title="網站使用條款">網站使用條款</a>│<a href="../../privacy.html" title="隱私權政策" >隱私權政策</a>│<a href="../../disclaimer.html" title="免責聲明">免責聲明</a>│<a href="#feedback" class="fancybox" title="問題回饋">問題回饋</a></p>
        </section>
    </footer>
    
    <!-- InstanceBeginEditable name="script-box" -->
+   <link href="../../css/jquery.fancybox.css" rel="stylesheet">
+   <script src="../../script/jquery.fancybox.pack.js"></script>
+   <script>
+		$(document).ready(function() {
+			$('.fancybox').fancybox();
+            $(".fancybox-effects-a").fancybox({
+				helpers:{
+					title:{type : 'outside'},
+					overlay:{speedOut : 0}  }  });  });
+    </script>
    <script src="../../script/jquery.lazyload.js"></script><!-- 圖片延遲載入 -->
    <script src="../../script/siteset.js"></script>
    <!-- InstanceEndEditable -->
