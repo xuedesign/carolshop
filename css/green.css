@@ -745,6 +745,11 @@ a.btn_down:hover{
 #member_nav{ display:block; float:left; width:150px}
 #member_nav ul{ margin:0 15px}
 #member_nav li{ padding:10px 0; border-bottom:1px dashed #BBBFB5 }
+#member_nav a:link {text-decoration:none; color:#969f8a/*#30aec7*/}
+#member_nav a:visited {text-decoration:none; color:#969f8a}
+#member_nav a:hover {text-decoration:underline; color:#F50}
+#member_nav a.navin{ font-weight:bold; text-decoration:none; color:#30aec7}
+
 #center_main{ display:block; position:relative; float:right; width:670px}
 .down_link02{ padding-left:120px}
 .bg_pp{ display:block; position:absolute; width:167px; height:164px}
